@@ -1,4 +1,4 @@
-inputFile = open("day1/part1_input.txt", "r")
+inputFile = open("day1/input.txt", "r")
 
 sonarReading = []
 
