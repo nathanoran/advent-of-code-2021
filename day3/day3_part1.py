@@ -27,16 +27,16 @@ while i < len(diagnosticReport):
 
     i += 1
 
-gamma = ""
-epsilon = ""
+gamma = 0
+epsilon = 0
 
 for diagnosticSum in diagnosticSumList:
     if diagnosticSum / len(diagnosticReport) > 0.5:
-        gamma += "1"
-        epsilon += "0"
+        gamma += 2 ** (lineLen - 1)
     else:
-        gamma += "0"
-        epsilon += "1"
+        epsilon += 2 ** (lineLen - 1)
+    
+    lineLen -= 1
 
 print(int(gamma) * int(epsilon))
 
