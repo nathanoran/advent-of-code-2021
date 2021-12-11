@@ -38,5 +38,4 @@ for diagnosticSum in diagnosticSumList:
     
     lineLen -= 1
 
-print(int(gamma) * int(epsilon))
-
+print(gamma * epsilon)
